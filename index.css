@@ -1,19 +1,21 @@
+html,
+body{
+    height: 100vh;
+    margin: 0;
+}
 body{
     display:flex;
-    flex-direction: column;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 100vh;
 }
 button,
 input{
     outline: none;
 }
-html,
-body{
-    height: 100%;
-    margin: 0;
-}
 .site-content{
-    display: flex;
-    flex: 1;
+   display: flex;
+   flex: 1;
 }
 .text-type-mistral{
     font-family: Mistral;
@@ -46,6 +48,7 @@ header {
     display: flex;
     background: rgba(216,18,0,0.6);
     height: 40px;
+    width: 100%;
     border-radius: 10px;
     align-items: center;
     justify-content:space-between;
@@ -153,6 +156,7 @@ header {
     justify-content: space-between;
     align-items:center;
     margin-top: 15px;
+    margin-left: 10px;
     width: 200px;
     height: 40vw;
     max-height: 150px;
@@ -181,10 +185,10 @@ header {
     align-items: center;
 }
 .image {
-    width: 50vw;
+    width: 40vw;
     height: 50vw;
-    max-height: 300px;    
-    max-width: 300px;
+    max-height: 200px;    
+    max-width: 200px;
     border: 1px solid rgba(216,18,0,0.6);
     border-radius: 10px;
    
@@ -211,7 +215,11 @@ header {
 footer {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background: rgba(216,18,0,0.6);
+    margin-top: -40px;
     height: 40px;
     border-radius: 10px;
     width: 100%;
@@ -232,16 +240,21 @@ footer {
     }
 }
 @media screen and (max-width: 600px){
-    .log-button{
-          width: 50px;
-          font-size: 100%;
-    }
-    .h2{
-        font-size: 100%;
-    }
     p2{
         display: none;
     }  
+}
+@media screen and (max-width: 300px){
+    h1{
+        font-size: 150%;
+    }
+    h2{
+        font-size: 80%;
+    }
+    .log-button{
+        width: 50px;
+        font-size: 100%;
+  }
 }
 @media screen and (max-height: 600px){
     .image{
@@ -249,7 +262,7 @@ footer {
         max-width: 30vw;
     }
 }
-@media screen and (max-height: 450px){
+@media screen and (max-height: 300px){
   .filter-area{
     display: none;
   }
