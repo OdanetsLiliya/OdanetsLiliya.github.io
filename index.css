@@ -20,6 +20,7 @@ input{
 }
 .site-content{
    display: flex;
+   justify-content: space-around;
    flex: 1;
 }
 .text-type-mistral{
@@ -30,7 +31,7 @@ input{
     font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
 }
 p2{
-    font-size:40%;
+    font-size:60%;
     color: white;
 }
 p3{
@@ -75,14 +76,9 @@ header {
     width: 35px;
     border: none;
     border-radius: 50%;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
 }
 .button:active{
-    box-shadow: inset 2px 2px 5px rgba(117, 4, 10, 0.98), 1px 1px 5px #C79191;
-    
+    box-shadow: inset 2px 2px 5px rgba(117, 4, 10, 0.98), 1px 1px 5px #C79191;   
 }
 .add {
     background-image: url(image/buttonWrite1.png);
@@ -94,25 +90,27 @@ header {
     background-image: url(image/deleteButton.png);
     margin-top: 10px;
 }
+.text-button{
+     background-color: transparent;
+     border:none;
+     text-align:center;
+     text-decoration-line: underline;
+}
+.text-button:active{
+   color: rgb(216,18,0);
+}
 .log-button {
     line-height:40px;
-    width: 70px;
-    background-color: transparent;
-    border:none;
+    width: 70px;  
     white-space:nowrap;
     color: white;
     font-size: 170%;
-    text-align:center;
-    font-family: Mistral;
-    text-decoration-line: underline;
-
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    font-family: Mistral; 
 }
-.log-button:active{
-   color: rgb(216,18,0);
+.load-more-button{
+    margin-bottom: 40px;
+    color: black;
+    font-size: 80%;
 }
 .heart-shape{
     border: none;
@@ -162,7 +160,7 @@ header {
     height: 19px;
 }
 .filter-area {
-    margin-right: 15%;
+   
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -185,12 +183,13 @@ header {
     width: 60vw;
 }
 .lent {
-    display: flex;
     display: inline-block;
     flex-direction: column;
-    align-items: center;
     overflow: scroll;
+    overflow-x: hidden;
+    text-align: center;
     margin-top: 5px;
+    margin-bottom: 45px;
     border-radius: 10px;
     min-width: 400px;
 }
@@ -198,7 +197,6 @@ header {
     display: flex;
     margin-top: 10px;
     margin-bottom: 40px;
-    align-items: center;
     background-color: rgba(219, 102, 102, 0.14);
     border-radius: 10px;
     padding: 1px;
@@ -306,9 +304,8 @@ footer {
   }
 }
 ::-webkit-scrollbar-button {
-    background-image:url('');
     background-repeat:no-repeat;
-    width:5px;
+    width:7px;
     height:0px
     }
     
@@ -319,20 +316,19 @@ footer {
     ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background-color:#6dc0c8;
+    background-color:#DB817B;
     }
     
     ::-webkit-scrollbar-thumb:hover{
-    background-color:#56999f;
+    background-color:#DB817B;
     }
     
     ::-webkit-resizer{
-    background-image:url('');
     background-repeat:no-repeat;
-    width:4px;
+    width:7px;
     height:0px
     }
     
     ::-webkit-scrollbar{
-    width: 4px;
+    width: 7px;
     }
