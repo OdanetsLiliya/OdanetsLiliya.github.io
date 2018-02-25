@@ -63,7 +63,7 @@ header {
     min-width: 100%;
     border-radius: 10px;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-around;
     white-space:nowrap;
     text-align:justify;
 }
@@ -192,6 +192,7 @@ header {
     overflow: scroll;
     margin-top: 5px;
     border-radius: 10px;
+    min-width: 400px;
 }
 .post {
     display: flex;
@@ -266,14 +267,20 @@ footer {
     .filter-area:last-of-type{
         display: none;
     }
+    .lent{
+        min-width: 100px;
+    }
+}
+@media screen and (max-width: 900px){
+     .filter-area:last-of-type{
+        display: none;
+    }
 }
 @media screen and (max-width: 600px){
     p2{
         display: none;
     }  
-    .filter-area:last-of-type{
-        display: none;
-    }
+   
 }
 @media screen and (max-width: 400px){
     h1{
