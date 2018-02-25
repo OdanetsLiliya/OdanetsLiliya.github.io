@@ -18,11 +18,11 @@ input{
    flex: 1;
 }
 .text-type-mistral{
-    font-family: Mistral;
+    font-family: Mistral, fantasy;
     color: white;
 }
 .text-type-comic{
-    font-family: 'Comic Sans MS';
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 p2{
     font-size:40%;
