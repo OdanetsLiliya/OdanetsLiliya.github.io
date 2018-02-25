@@ -34,9 +34,15 @@ p2{
 }
 p3{
     font-size: 80%;
-    color:black;
+    color:black; 
 }
 p4{
+    font-size: 50%;
+    color:black;
+    max-width: 300px;
+    text-align: center;
+}
+p5{
     font-size: 80%;
     color:white;
 }
@@ -161,10 +167,10 @@ header {
     flex-direction: column;
     align-items:center;
     margin-top: 15px;
-    min-width: 230px;
+    min-width: 220px;
     height: 40vw;
     max-height: 110px;
-    min-height: 100px;
+    max-height: 100px;
     border: 1px solid rgba(216,18,0,0.6);
     border-radius: 10px;
     padding: 5px;
@@ -188,7 +194,7 @@ header {
 .post {
     display: flex;
     margin-top: 10px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     align-items: center;
 }
 .image {
@@ -208,7 +214,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 5px;
     height: 120px;
     justify-content: space-between;
 }
@@ -216,6 +222,8 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border: 0.5px solid rgba(216,18,0,0.6); 
+    border-radius: 10px;
 }
 .flex-box {
     width: 100%;
@@ -243,16 +251,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .lent{
-        margin-top: 20px;
-    }
     .image{
         max-height: 300px;
         max-width: 250px;
     }
     .filter-area{
-        margin-right:0;  
-        padding: 1px;
+        margin-right:0;
+        margin-top: 1px;  
+        padding: 0.5px;
     }
     .filter-area:last-of-type{
         display: none;
@@ -262,6 +268,9 @@ footer {
     p2{
         display: none;
     }  
+    .filter-area:last-of-type{
+        display: none;
+    }
 }
 @media screen and (max-width: 400px){
     h1{
